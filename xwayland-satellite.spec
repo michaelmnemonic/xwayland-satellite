@@ -27,7 +27,7 @@ cargo vendor
 %cargo_prep -v vendor
 
 %build
-%cargo_build -f systemd
+%cargo build --release -F systemd
 %{cargo_license_summary}
 %{cargo_license} > LICENSE.dependencies
 
